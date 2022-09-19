@@ -15,6 +15,14 @@ namespace Lab2inc
     public enum Color {White, Silver, Black, Green, Red, Blue, Purple, Yellow}
     public class Car
     {
+        public Car() { }
+        public Car(string Firm_, string Model_, string Info_, int Year_, float Enginee_v, int mileage, bool mech, bool rwheel, EngineType type_e, Privod priv, Color colr)
+        {
+            Firm = Firm_; Model = Model_; Info = Info_; Year = Year_; EngineV = Enginee_v;
+            milecage = mileage; Mechanical = mech; RightWHeel = rwheel; Engine = type_e;
+            Wheel_Drive = priv; car_color = colr;
+        }
+
         public string Firm, Model, Info;
         public int Year;
         public float EngineV = 3.0f;
